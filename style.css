@@ -271,10 +271,10 @@ nav li i {
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .catagory img {
-    width: 60px;
+    width: 30px;
 }
 .catagory-text {
-    font-size: 0.875rem;
+    font-size: 0.5rem;
 }
 .catagory:hover {
     border: 1px solid #FF42A5;
@@ -317,7 +317,7 @@ footer {
     }
 
     .primary-padding {
-        padding: 20px 20px;
+        padding: 20px;
     }
 
     nav,
@@ -407,5 +407,29 @@ footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+}
+
+@media  screen and (min-width:576px) and (max-width:960px) {
+    .primary-padding {
+        padding: 20px 40px;
+    }
+    nav,
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    .banner-container {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    .banner-content {
+        width: unset;
+    }
+    .online-games-card {
+        display: flex;
+        /* grid-template-columns: repeat(2, 1fr); */
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
