@@ -67,6 +67,7 @@ nav ul li {
     padding: 17px 24px;
     color: #3C354F;
     font-weight: 500;
+    cursor: pointer;
 }
 
 nav li i {
@@ -158,7 +159,7 @@ nav li i {
 }
 
 
-.card p {
+.card > p {
     color: #534C64;
     font-weight: 500;
     margin-top: 7px;
@@ -170,6 +171,7 @@ nav li i {
     background-image: url("./images/Rectangle\ 4.png");
     background-position: center;
     background-size: cover;
+    border-radius: 16px;
 }
 
 .card-img-2 {
@@ -194,6 +196,21 @@ nav li i {
     background-image: url("./images/Rectangle\ 6.png");
     background-position: center;
     background-size: cover;
+}
+
+.play-btn {
+    width: 100%;
+    height: 300px;
+    border-radius: 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 5px;
+}
+.img-cards:hover .play-btn {
+    display: flex;
 }
 
 
@@ -234,6 +251,15 @@ nav li i {
     }
 
     .banner-content p {
+        font-size: 1rem;
+    }
+    .online-games-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .online-games h1 {
+        font-size: 2rem;
+    }
+    .online-games>p {
         font-size: 1rem;
     }
 }
