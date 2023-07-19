@@ -237,6 +237,7 @@ nav li i {
 
 .player-img img {
     width: 100%;
+    /* height: 100%; */
 }
 
 .doll-img {
@@ -252,6 +253,8 @@ nav li i {
     width: 100%;
 }
 
+/* game catagory styles */
+
 .catagory {
     display: flex;
     gap: 16px;
@@ -264,7 +267,7 @@ nav li i {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
-    /* justify-content: center; */
+    justify-content: center;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
 }
 .catagory img {
@@ -276,6 +279,33 @@ nav li i {
 .catagory:hover {
     border: 1px solid #FF42A5;
     color: #FF42A5;
+}
+/* footer section styles */
+footer {
+    background: #0B0223;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer-icon {
+    justify-content: center;
+}
+.footer-details, .terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0;
+    gap: 60px;
+    font-weight: 400;
+}
+.footer-container ul li {
+    list-style: none;
+}
+.footer-links{
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 
@@ -363,5 +393,13 @@ nav li i {
     }
     .catagory {
         padding: 5px;
+    }
+    .footer-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .terms {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
