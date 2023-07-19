@@ -132,10 +132,11 @@ nav li i {
 /* online games section style */
 .online-games h1 {
     color: #0B0223;
-    text-align: center;
     font-size: 3rem;
     font-weight: 700;
+    text-align: center;
 }
+
 
 .online-games>p {
     color: #534C64;
@@ -159,7 +160,7 @@ nav li i {
 }
 
 
-.card > p {
+.card>p {
     color: #534C64;
     font-weight: 500;
     margin-top: 7px;
@@ -209,9 +210,48 @@ nav li i {
     color: #fff;
     gap: 5px;
 }
+
 .img-cards:hover .play-btn {
     display: flex;
 }
+
+/* players container styles */
+.players-container {
+    display: flex;
+    align-items: center;
+    gap: 150px;
+    margin-top: 100px;
+}
+
+.player-content h2 {
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.player-content p {
+    color: #534C64;
+    font-weight: 500;
+    margin-top: 7px;
+}
+
+.player-img img {
+    width: 100%;
+}
+
+.doll-img {
+    width: 250px;
+    height: 150px;
+    border-radius: 8px;
+    position: relative;
+    bottom: 150px;
+    left: -100px;
+}
+
+.doll-img img {
+    width: 100%;
+}
+
 
 
 @media screen and (max-width:576px) {
@@ -226,6 +266,7 @@ nav li i {
     }
 
     nav,
+    .players-container,
     nav ul {
         flex-direction: column;
         text-align: center;
@@ -253,13 +294,29 @@ nav li i {
     .banner-content p {
         font-size: 1rem;
     }
+
     .online-games-card {
         grid-template-columns: repeat(1, 1fr);
     }
+
     .online-games h1 {
         font-size: 2rem;
     }
+
     .online-games>p {
+        font-size: 1rem;
+    }
+    .players-container {
+        gap: 60px;  
+    }
+    .doll-img {
+        width: 150px;
+        height: 100px;
+    }
+    .player-content h2 {
+        font-size: 2rem;
+    }
+    .player-content p {
         font-size: 1rem;
     }
 }
