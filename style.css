@@ -372,8 +372,12 @@ footer {
     .doll-img {
         width: 150px;
         height: 100px;
+        bottom: 60px;
+        left: 1px;
     }
-
+    .player-img img {
+        width: 80%;
+    }
     .player-content h2 {
         font-size: 2rem;
     }
@@ -397,9 +401,11 @@ footer {
     .footer-details {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
     .terms {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
 }
