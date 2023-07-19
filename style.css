@@ -273,9 +273,7 @@ nav li i {
 .catagory img {
     width: 30px;
 }
-.catagory-text {
-    font-size: 0.5rem;
-}
+
 .catagory:hover {
     border: 1px solid #FF42A5;
     color: #FF42A5;
@@ -307,7 +305,9 @@ footer {
     font-size: 2rem;
     font-weight: 700;
 }
-
+.footer-links li {
+    cursor: pointer;
+}
 
 @media screen and (max-width:576px) {
     .btn-primary {
@@ -393,10 +393,13 @@ footer {
         place-items: center;
     }
     .catagory img {
-        width: 30px;
+        width: 20px;
     }
     .catagory {
         padding: 5px;
+    }
+    .catagory-text {
+        font-size: 0.3rem;
     }
     .footer-details {
         display: grid;
@@ -432,4 +435,5 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+
 }
